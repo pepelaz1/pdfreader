@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pdfviewer", "pdfviewer\pdfviewer.vcxproj", "{6C60FD39-5894-4090-AD90-BD2CE7E1647A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{576A232E-2756-4AF4-93BF-5D2957DB87C8} = {576A232E-2756-4AF4-93BF-5D2957DB87C8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libthirdparty", "pdfreader\win32\libthirdparty.vcxproj", "{5EDCF4FD-0291-4FB9-8D96-D58957CA5E3C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmupdf", "pdfreader\win32\libmupdf.vcxproj", "{5F615F91-DFF8-4F05-BF48-6222B7D86519}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pdfreader", "pdfreader\pdfreader.vcxproj", "{576A232E-2756-4AF4-93BF-5D2957DB87C8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5F615F91-DFF8-4F05-BF48-6222B7D86519} = {5F615F91-DFF8-4F05-BF48-6222B7D86519}
+		{5EDCF4FD-0291-4FB9-8D96-D58957CA5E3C} = {5EDCF4FD-0291-4FB9-8D96-D58957CA5E3C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Memento|Win32 = Memento|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C60FD39-5894-4090-AD90-BD2CE7E1647A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C60FD39-5894-4090-AD90-BD2CE7E1647A}.Debug|Win32.Build.0 = Debug|Win32
+		{6C60FD39-5894-4090-AD90-BD2CE7E1647A}.Memento|Win32.ActiveCfg = Release|Win32
+		{6C60FD39-5894-4090-AD90-BD2CE7E1647A}.Memento|Win32.Build.0 = Release|Win32
+		{6C60FD39-5894-4090-AD90-BD2CE7E1647A}.Release|Win32.ActiveCfg = Release|Win32
+		{6C60FD39-5894-4090-AD90-BD2CE7E1647A}.Release|Win32.Build.0 = Release|Win32
+		{5EDCF4FD-0291-4FB9-8D96-D58957CA5E3C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5EDCF4FD-0291-4FB9-8D96-D58957CA5E3C}.Debug|Win32.Build.0 = Debug|Win32
+		{5EDCF4FD-0291-4FB9-8D96-D58957CA5E3C}.Memento|Win32.ActiveCfg = Memento|Win32
+		{5EDCF4FD-0291-4FB9-8D96-D58957CA5E3C}.Memento|Win32.Build.0 = Memento|Win32
+		{5EDCF4FD-0291-4FB9-8D96-D58957CA5E3C}.Release|Win32.ActiveCfg = Release|Win32
+		{5EDCF4FD-0291-4FB9-8D96-D58957CA5E3C}.Release|Win32.Build.0 = Release|Win32
+		{5F615F91-DFF8-4F05-BF48-6222B7D86519}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5F615F91-DFF8-4F05-BF48-6222B7D86519}.Debug|Win32.Build.0 = Debug|Win32
+		{5F615F91-DFF8-4F05-BF48-6222B7D86519}.Memento|Win32.ActiveCfg = Memento|Win32
+		{5F615F91-DFF8-4F05-BF48-6222B7D86519}.Memento|Win32.Build.0 = Memento|Win32
+		{5F615F91-DFF8-4F05-BF48-6222B7D86519}.Release|Win32.ActiveCfg = Release|Win32
+		{5F615F91-DFF8-4F05-BF48-6222B7D86519}.Release|Win32.Build.0 = Release|Win32
+		{576A232E-2756-4AF4-93BF-5D2957DB87C8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{576A232E-2756-4AF4-93BF-5D2957DB87C8}.Debug|Win32.Build.0 = Debug|Win32
+		{576A232E-2756-4AF4-93BF-5D2957DB87C8}.Memento|Win32.ActiveCfg = Release|Win32
+		{576A232E-2756-4AF4-93BF-5D2957DB87C8}.Memento|Win32.Build.0 = Release|Win32
+		{576A232E-2756-4AF4-93BF-5D2957DB87C8}.Release|Win32.ActiveCfg = Release|Win32
+		{576A232E-2756-4AF4-93BF-5D2957DB87C8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
